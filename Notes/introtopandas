@@ -1,3 +1,28 @@
+
+What we will do with pandas primarily can be summarised as three typical data analyst steps : 
+EXPLORE, CLEAN, PROCESS 
+
+If you’re nervous in getting started with pandas lets talk about what you are familiar with 
+* SQL - equivalent syntax
+* R - similar functionality 
+* Working with excel / spreadsheets - you know how data is managed in a tabular format and have probably written formulae and functions 
+
+7. What’s a data frame 
+WB Core concept - data frame - whiteboard Rows and Columns 
+
+
+Re launch clean python for pandas — Lets try this together -  from term, cd to where you want to work and type in command Jupyter notebook to launch 
+Which directory?? For me - I’m going to navigate to where my activity files are. Have you downloaded the files from LMS or are you using a forked repo from git hub? Either way, which directory are those in. New python notebook. Name it logical eg reading data with pd 1  
+
+8. To keep building our comfort level with Jupyter, lets look at the commands we might use in Jupyter- Ctrl + Shift + P
+
+Terminology : 
+* A kernel is a “computational engine” that executes the code contained in a notebook document.
+* A cell is a container for text to be displayed in the notebook or code to be executed by the notebook’s kernel.
+* # to leave a comment and ensure it isn’t run
+
+
+
 Import numpy as np 
 Import pandas as pd 
 Shortened name just helps us reference the library in functions 
