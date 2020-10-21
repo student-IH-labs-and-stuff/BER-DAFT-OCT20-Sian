@@ -1,0 +1,77 @@
+11. Wrangling using index
+In this section we will use indexing for easy selection and navigation of the data frame. 
+What is an index ? https://www.r-craft.org/r-news/a-clear-explanation-of-the-pandas-index/
+Create filtered data frame to work with  :  
+filtered = data[data['gender']=='M']
+filtered.head()
+Create a fresh index for the filtered data frame 
+filtered = filtered.reset_index(drop=True). Create an index, but don’t keep it as a column (look at different results). What would happen if we didn’t have an index to work with??
+By using reset_index(), sequential numbers are set to the index and the original index is added to the data column.
+filtered.head() - the table itself has not changed 
+filtered[1:4]  standard position 1-4
+filtered[['gender', 'ic2', 'ic3']][0:10] standard position 0-10 for selected columns 
+filtered.loc[1:3] using the row label to select values
+filtered.loc[100] using the row label to select one row value 
+filtered.iloc[1:3] using index for rows and columns to select 
+
+filtered.iloc[1:10,0:4] index first rows and then columns 
+Filtered.dtypes  - to look at the column headers position 
+filtered.iloc[[1,2,3,4],[0,2,4]] use the index positions to select specific rows and columns
+
+Quiz - How to select rows 50 to 100 inclusive ? Remember the index position starts at 0?
+50:100
+50:101
+51:101
+49:100
+What if I am interested in rows 50 to 100 of the biggest average donations (ie sorted by avg donation value desc) 
+
+Diff between iloc and loc https://www.shanelynn.ie/select-pandas-dataframe-rows-and-columns-using-iloc-loc-and-ix/
+
+Iloc = integer-location based indexing / selection by position.
+
+Loc : a.) Selecting rows by label/index or b.) Selecting rows with a boolean / conditional lookup
+
+iloc - default indexes (system generated)loc - table indexes or manually given indexes
+Great thing about index - can be set on any column. Eg last name - 
+using data.set_index
+Applying set_index() to the original DataFrame will delete the original index.
+If you want to keep the original index as data column, you can use set_index() after reset_index().
+df_rs = df.reset_index().set_index('state’)
+Activity 3 - students - continue work but create a filtered subset data frame with a new index
+
+12 - data types Reviewing data types 
+data.dtypes
+data._get_numeric_data()
+data._get_bool_data()
+data.select_dtypes('object')
+
+Create a temp copy before changing it temp = data.copy() to demo alternatives 
+Logical way to change data type :
+temp['median_home_val'] = temp['median_home_val'].astype('float', errors='ignore')
+temp.dtypes
+But some of the data points in the columns are strings 
+
+Correct data types like parsing using to_numeric 
+data['median_home_val'] =  pd.to_numeric(data['median_home_val'], errors='coerce’)
+
+data['ic5'] =  pd.to_numeric(data['ic5'], errors='coerce')
+Converts strings to NaN 
+Numeric + Errors = coerce : It will replace all non-numeric values with NaN
+
+Drop dupes print(data.shape)
+data = data.drop_duplicates()
+print(data.shape)
+
+Show on temp df - or as class discuss… how to remove dupes based on specific columns 
+temp = temp.drop_duplicates(subset=['state','gender', 'ic2', 'ic3'])
+if we want to remove duplicates based on specific columns 
+
+Why do we need to be careful with this? 
+Multiple columns means effectively aggregate up to column a +b unique combination- draw it out on whiteboard with example ice cream flavour + cup/cone + date 
+
+What other operations might we need to do with data at this stage - ensuring the contents of the columns are consistent ? 
+https://docs.python.org/2.5/lib/string-methods.html
+What about replacements using logical syntax 
+Are there any things we can’t fix? 
+
+Activity 4 - students
