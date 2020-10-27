@@ -1,0 +1,50 @@
+## Daniel_Results_LAB SQL 4
+
+
+#Get film ratings.
+Select rating in 
+FROM sakila.film;
+
+#Get release years.
+select release_year
+From sakila.film;
+
+#Get all films with ARMAGEDDON in the title.
+SELECT title
+From Sakila.film;
+
+select * from sakila.film
+where title like 'ARMAGEDDON%';
+
+#Get all films with APOLLO in the title
+select * from sakila.film
+where title like 'Apollo%';
+
+#Get all films which title ends with APOLLO
+select * from sakila.film
+where title like '%Apollo';
+
+#Get all films with word DATE in the title
+select * from sakila.film
+where title regexp 'DATE';
+
+#Get 10 films with the longest title
+SELECT titles 
+From sakila.film
+WHERE COUNT(title, 'l') > 1
+
+#Get 10 the longest films.
+select film_id, title, description, length 
+from sakila.film
+order by length desc
+limit 10;
+
+
+#How many films include Behind the Scenes content
+select * from sakila.film
+where special_features regexp 'Behind the Scenes';
+
+#List films ordered by release year and title in alphabetical order
+select title, release_year
+from sakila.film
+order by title asc;
