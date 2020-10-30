@@ -53,15 +53,15 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 | Lab | Link to lab instruction (external repo) | Link to lab solution |
 |-----|-------------------------|--------------------------------------|
-| Lab \| SQL Intro | [link](https://github.com/ironhack-labs/lab-intro-sql) | coming soon |
-| Lab \| SQl Queries 2 | [link](https://github.com/ironhack-labs/lab-sql-2) | coming soon |
-| Lab \| SQl Queries 3 | [link](https://github.com/ironhack-labs/lab-sql-3)|coming soon|
-| Lab \| SQl Queries 4 | [link](https://github.com/ironhack-labs/lab-sql-4) |coming soon|
-| Lab \| SQl Queries 5 | [link](https://github.com/ironhack-labs/lab-sql-5) |coming soon|
-| Lab \| SQl Queries 6 | [link](https://github.com/ironhack-labs/lab-sql-6) |coming soon|
-| Lab \| SQl Queries 7 | [link](https://github.com/ironhack-labs/lab-sql-7) |coming soon|
-| Lab \| SQl Queries 8 | [link](https://github.com/ironhack-labs/lab-sql-8) |coming soon|
-| Lab \| SQl Queries 9 | [link](https://github.com/ironhack-labs/lab-sql-9) |coming soon|
+| Lab \| SQL Intro | [link](https://github.com/ironhack-labs/lab-intro-sql) | [link] (https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.01_lab_intro_sql_solution.md) |
+| Lab \| SQl Queries 2 | [link](https://github.com/ironhack-labs/lab-sql-2) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_2_solution.md) |
+| Lab \| SQl Queries 3 | [link](https://github.com/ironhack-labs/lab-sql-3)|[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_3_solution.md)|
+| Lab \| SQl Queries 4 | [link](https://github.com/ironhack-labs/lab-sql-4) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_4_solution.md)|
+| Lab \| SQl Queries 5 | [link](https://github.com/ironhack-labs/lab-sql-5) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_5_solution.md)|
+| Lab \| SQl Queries 6 | [link](https://github.com/ironhack-labs/lab-sql-6) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_6_solution.md)|
+| Lab \| SQl Queries 7 | [link](https://github.com/ironhack-labs/lab-sql-7) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_7_solution.md)|
+| Lab \| SQl Queries 8 | [link](https://github.com/ironhack-labs/lab-sql-8) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_8_solution.md)|
+| Lab \| SQl Queries 9 | [link](https://github.com/ironhack-labs/lab-sql-9) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.02_lab_sql_9_solution.md)n|
 
 #### Miscellaneous <a name="misc_u2"></a>
 
