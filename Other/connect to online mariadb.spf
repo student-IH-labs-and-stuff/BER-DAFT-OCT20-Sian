@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>world</string>
+			<key>host</key>
+			<string>relational.fit.cvut.cz</string>
+			<key>kcid</key>
+			<string>-502577814635449986</string>
+			<key>name</key>
+			<string>mariadb online trains</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>guest</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilterV2</key>
+			<dict>
+				<key>children</key>
+				<array/>
+				<key>filterClass</key>
+				<string>groupNode</string>
+				<key>isConjunction</key>
+				<true/>
+			</dict>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRk
+			YXRhgAGtCwwZGhscHSEoLDA0OFUkbnVsbNMNDg8QFBhXTlMua2V5
+			c1pOUy5vYmplY3RzViRjbGFzc6MREhOAAoADgASjFRYXgAWABoAI
+			gAxUdHlwZVRyb3dzVGtleXNfECZTZWxlY3Rpb25EZXRhaWxUeXBl
+			UHJpbWFyeUtleWVkRGV0YWlsc9MNDg8eHyCgoIAH0iIjJCVaJGNs
+			YXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJsZURpY3Rpb25hcnmj
+			JCYnXE5TRGljdGlvbmFyeVhOU09iamVjdNIODykroSqACYAL0g8t
+			Li9ZTlMuc3RyaW5ngApUQ29kZdIiIzEyXxAPTlNNdXRhYmxlU3Ry
+			aW5nozEzJ1hOU1N0cmluZ9IiIzU2Xk5TTXV0YWJsZUFycmF5ozU3
+			J1dOU0FycmF50iIjJjmiJicACAARABoAJAApADIANwBJAEwAUQBT
+			AGEAZwBuAHYAgQCIAIwAjgCQAJIAlgCYAJoAnACeAKMAqACtANYA
+			3QDeAN8A4QDmAPEA+gEQARQBIQEqAS8BMQEzATUBOgFEAUYBSwFQ
+			AWIBZgFvAXQBgwGHAY8BlAAAAAAAAAIBAAAAAAAAADoAAAAAAAAA
+			AAAAAAAAAAGX
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {796, 530}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>table</key>
+			<string>Country</string>
+			<key>view</key>
+			<string>SP_VIEW_CONTENT</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select c.Name as "Country", c.Region as "Region", c. Population as countrypopln, t.Name as "Capital", t.Population as "citypopuln"
+from world.Country c 
+left join world.City t 
+on c.Capital= t.ID 
+where t.Name IS NOT NULL
+order by c.Population DESC</string>
+		<string>select c.Name as "Country", c.Region as "Region", t.Name as "Capital", t.Population as "citypopuln"
+from world.Country c 
+left join world.City t 
+on c.Capital= t.ID 
+where t.Name IS NOT NULL
+order by c.Population DESC</string>
+		<string>select c.Name as "Country", c.Region as "Region", t.Name as "Capital", t.Population as "citypopuln"
+from world.Country c 
+left join world.City t 
+on c.Capital= t.ID 
+where t.Name IS NOT NULL</string>
+		<string>select c.Name as "Country", c.Region as "Region", t.Name as "Capital" 
+from world.Country c 
+left join world.City t 
+on c.Capital= t.ID 
+where t.Name IS NOT NULL</string>
+		<string>select c.Name as "Country", c.Region as "Region", t.Name as "Capital" 
+from world.Country c 
+left join world.City t 
+on c.Capital= t.ID 
+where t.Name NOT NULL</string>
+		<string>select c.Name as "Country", c.Region as "Region", t.Name as "Capital" 
+from world.Country c 
+left join world.City t 
+on c.Capital= t.ID</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) 
+as Density
+from Country 
+where Population &lt;&gt;  0
+order by Density Desc
+limit 10</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) 
+as Density
+from Country 
+where Population &lt;&gt;  0
+order by Density Desc</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) 
+as Density
+from Country 
+where Population &lt;&gt;  0</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) 
+as Density
+from Country 
+where Popln &lt;&gt;  0</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) 
+as Density
+from Country 
+where Popln &lt;&gt; = 0</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) as Density
+where Popln &lt;&gt; = 0
+from Country</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) as Density
+where Population NOT = 0
+from Country</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) as Density
+where Population &lt;&gt; 0
+from Country</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) as Density
+from Country</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0) as Popln , SurfaceArea, Round((Population/SurfaceArea),0) as "Density/sqkm"
+from Country</string>
+		<string>select Continent, Region, Name as Country, FORMAT(Population,0), SurfaceArea, Round((Population/SurfaceArea),0) as Density
+from Country</string>
+		<string>select Continent, Region, Name as Country, Population, SurfaceArea, Round((Population/SurfaceArea),0) as Density
+from Country</string>
+		<string>select Continent, Region, Name as Country, Population, SurfaceArea, (Population/SurfaceArea) as Density
+from Country</string>
+		<string>select Continent, Region, Name as Country, Population 
+from Country</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.5-10.3.15-MariaDB-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
