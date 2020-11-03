@@ -13,6 +13,7 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
     * [Own notebooks](#ls_u1_own)
   * [Week 2](#ls_u2)
     * [Misc (SQL installation & error fixes)](#misc_u)
+  * [Week 3](#ls_u3)
 
 ## 1. Lecture Notes <a name="ln"></a>
 
@@ -62,6 +63,14 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 | Lab \| SQl Queries 7 | [link](https://github.com/ironhack-labs/lab-sql-7) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.07_lab_sql_7_solution.md)|
 | Lab \| SQl Queries 8 | [link](https://github.com/ironhack-labs/lab-sql-8) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.08_lab_sql_8_solution.md)|
 | Lab \| SQl Queries 9 | [link](https://github.com/ironhack-labs/lab-sql-9) |[link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.09_lab_sql_9_solution.md)|
+
+### Unit 3 (Week 3) <a name="ls_u3"></a>
+
+| Lab | Link to lab instruction (external repo) | Link to lab solution |
+|-----|-------------------------|--------------------------------------|
+|Lab \| SQL Join| [link](https://github.com/ironhack-labs/lab-sql-join) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.01_lab_sql_join_solution.md) |
+|Lab \| SQL SQL Joins on multiple tables| [link](https://github.com/ironhack-labs/lab-sql-join-multiple-tables) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.02_lab_sql_join_multiple_tables_solution.md) |
+
 
 #### Miscellaneous <a name="misc_u2"></a>
 
