@@ -8,6 +8,7 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 1. [Lecture Notes](#ln)
   * [Week 1](#ln_u1)
   * [Week 2](#ln_u2)
+  * [Week 3](#ln_u3)
 2. [Lab Solutions](#ls)
   * [Week 1](#ls_u1)
     * [Own notebooks](#ls_u1_own)
@@ -19,11 +20,31 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 ### Unit 1 (Week 1) <a name="ln_u1"></a>
 
+| Day | Notes | Files |
+|--|--|--|
+|2|[`teaching2010.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202010.ipynb)||
+|3|[`teaching2110.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202110.ipynb)||
+|4|[`teaching2110.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202210.ipynb), [`lambda.ipynb` (python data cleaning utils)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/lambda.ipynb)||
+
 ### Unit 2 (Week 2) <a name="ln_u2"></a>
 
 | Day | Notes | Files |
 |--|--|--|
-|1|[`W2D1 - Data Structures.pdf`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/lecture/unit_2/W2D1%20-%20Data%20Structures.pdf)| [`bank_data_class_example.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/lecture/unit_2/bank_data_class_example.sql) |
+|1|[`python_and_sql.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/python_and_sql.ipynb), [`W2D1 - Data Structures.pdf`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/lecture/unit_2/W2D1%20-%20Data%20Structures.pdf)| [`bank_data_class_example.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/lecture/unit_2/bank_data_class_example.sql)|
+|2||[`day2sql.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/day2sql.sql) |
+|3||[`day3.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/day3.sql)|
+|4||[`sql day 4.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/sql%20day%204.sql), [`sql day 4 cont.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/sql%20day%204%20cont.sql)|
+|5|||
+
+### Unit 3 (Week 3) <a name="ln_u3"></a>
+
+| Day | Notes | Files |
+|--|--|--|
+|1|[`unit_3_day_1.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/unit%203%20day%201.ipynb)||
+|2|[`window functions or groups.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/window%20functions%20or%20groups.sql)|[`sql_day_6.sql`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/sql%20day%206.sql)|
+|3|||
+|4|||
+|5|||
 
 ## 2. Lab solutions
 
@@ -70,6 +91,9 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |-----|-------------------------|--------------------------------------|
 |Lab \| SQL Join| [link](https://github.com/ironhack-labs/lab-sql-join) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.01_lab_sql_join_solution.md) |
 |Lab \| SQL SQL Joins on multiple tables| [link](https://github.com/ironhack-labs/lab-sql-join-multiple-tables) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.02_lab_sql_join_multiple_tables_solution.md) |
+|Lab \| SQL SQL subqueries| [link](https://github.com/ironhack-labs/lab-sql-subqueries) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.05_lab_sql_subqueries_solution.md) |
+
+
 
 
 #### Miscellaneous <a name="misc_u2"></a>
