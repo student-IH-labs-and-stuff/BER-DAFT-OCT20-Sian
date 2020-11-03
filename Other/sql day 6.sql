@@ -211,3 +211,87 @@ cross join distinct_frequency;
 # nb The CROSS JOIN have a high potential to consume more resources and they can cause performance issues as they are computationally very expensive. This is because it produces the number of rows that are returned is the product of number of rows in table 1 times the number of rows in the other table
 
 
+
+#subqueries!!
+
+#'way easier than they sound'
+
+#Lets use the loan table from the bank database. We want to identify the customers who have borrowed amount which are more than the average amount of all customers. This would not be possible to achieve through simple queries that have used before (without using variables which we will take a look at, later in the course). For this we will use a subquery.
+
+-- step 1: calculate the average
+select avg(amount) from bank.loan;
+
+-- step 2 --> pseudo code the main goal of this step ....
+select * from bank.loan
+where amount > "AVERAGE";
+
+-- step 3 ... create the query
+select * from bank.loan
+where amount > (
+  select avg(amount)
+  from bank.loan
+);
+-- step 4 - Prettify the result. Let's find top 10 such customers
+select * from bank.loan
+where amount > (select avg(amount)
+from bank.loan)
+order by amount desc
+limit 10;
+
+#This
+
+#Sample A: The result from this query will be used again in later session to build further in the other topic we will cover.
+#In this query we are trying to find those banks from the trans table where the average amount of transactions is over 5500.
+#If we try to find this result directly, it would not be possible as we need only the names of the banks and not the averages in this case.
+select bank from (
+  select bank, avg(amount) as Average
+  from bank.trans
+  where bank <> ''
+  group by bank
+  having Average > 5500) sub1;
+#Sample B : The result from this query will be used again in later session to build further in the other topic we will cover.
+#In this query we are trying to find the k_symbols based on the average amount from the table order. The average amount should be more than 3000.
+select k_symbol from (
+  select avg(amount) as Average, k_symbol
+  from bank.order
+  where k_symbol <> ' '
+  group by k_symbol
+  having Average > 3000
+  order by Average desc
+) sub1; is a simple example where we are trying to show how subqueries are used. The same could also be achieved by using HAVING clause and no subquery.
+
+select * from (
+  select account_id, bank_to, account_to, sum(amount) as Total
+  from bank.order
+  group by account_id, bank_to, account_to
+) sub1
+where total > 10000;
+
+
+#In this query we will use the results from Sample A. In that query we found the banks from the trans table where the average amount of transactions is over 5500. Now we will use those results to filter the results from the order table where bank_to is in the list of banks found previously.
+select * from bank.order
+where bank_to in (
+  select bank from (
+    select bank, avg(amount) as Average
+    from bank.trans
+    where bank <> ''
+    group by bank
+    having Average > 5500
+    ) sub1
+)
+and k_symbol <> ' ';
+
+
+
+#In this query we will use the results from Sample B. In that query we found the k_symbols based on the average amount from the table order. The average amount was more than 3000. Now we will use the results from the query above to only see the transactions from the trans table where the k_symbol value is the result from the above query.
+select * from bank.trans
+where k_symbol in (
+  select k_symbol as symbol from (
+    select avg(amount) as Average, k_symbol
+    from bank.order
+    where k_symbol <> ' '
+    group by k_symbol
+    having Average > 3000
+    order by Average desc
+  ) sub1
+);
