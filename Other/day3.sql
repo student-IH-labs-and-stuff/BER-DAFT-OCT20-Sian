@@ -78,6 +78,70 @@ alter table accountDemo
 add column balance int(11) after date;
 
 
+.....................................
+
+#2.05 activity 4 --- create table client and card 
+use bank_demo 
+create table card (
+  card_id int(11) default null,
+  disp_id int(11) default null,
+  type text,
+  issued text
+)
+
+insert into card values (1005,9285,'classic','931107 00:00:00\r'),
+                        (104,588,'classic','940119 00:00:00\r')
+
+create table client (
+  client_id int(11) default null,
+  birth_number int(11) default null,
+  district_id int(11) default null
+)
+
+insert into client values (1,706213,18),(2,450204,1),(3,406009,1),(4,561201,5),(5,605703,5)
+
+create table disp (
+  disp_id int default null,
+  client_id int default null,
+  account_id int default null,
+  type text collate utf8mb4_unicode_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+create table loan (
+  loan_id int default null,
+  account_id int default null,
+  date int default null,
+  amount int default null,
+  duration int default null,
+  payment float default null,
+  status text collate utf8mb4_unicode_ci,
+  status_desc varchar(30) COLLATE utf8mb4_unicode_ci default null
+)
+
+create table order (
+  order_id int default null,
+  account_id int default null,
+  bank_to text collate utf8mb4_unicode_ci,
+  account_to int default null,
+  amount float default null,
+  k_symbol text collate utf8mb4_unicode_ci
+)
+
+create table trans (
+  trans_id int default null,
+  account_id int default null,
+  date int default null,
+  type text collate utf8mb4_unicode_ci,
+  operation text collate utf8mb4_unicode_ci,
+  amount float default null,
+  balance float default null,
+  k_symbol text collate utf8mb4_unicode_ci,
+  bank text collate utf8mb4_unicode_ci,
+  account int default null
+)
+
+-------------------
 
 -- deletes the record where the condition is met
 delete from account_demo where account_id = 1;
