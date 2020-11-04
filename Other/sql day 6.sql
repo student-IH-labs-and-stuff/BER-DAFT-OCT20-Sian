@@ -238,7 +238,14 @@ from bank.loan)
 order by amount desc
 limit 10;
 
-#This
+#This is is a simple example where we are trying to show how subqueries are used. The same could also be achieved by using HAVING clause and no subquery.
+
+select * from (
+  select account_id, bank_to, account_to, sum(amount) as Total
+  from bank.order
+  group by account_id, bank_to, account_to
+) sub1
+where total > 10000;
 
 #Sample A: The result from this query will be used again in later session to build further in the other topic we will cover.
 #In this query we are trying to find those banks from the trans table where the average amount of transactions is over 5500.
@@ -249,6 +256,9 @@ select bank from (
   where bank <> ''
   group by bank
   having Average > 5500) sub1;
+  
+  
+  
 #Sample B : The result from this query will be used again in later session to build further in the other topic we will cover.
 #In this query we are trying to find the k_symbols based on the average amount from the table order. The average amount should be more than 3000.
 select k_symbol from (
@@ -258,14 +268,7 @@ select k_symbol from (
   group by k_symbol
   having Average > 3000
   order by Average desc
-) sub1; is a simple example where we are trying to show how subqueries are used. The same could also be achieved by using HAVING clause and no subquery.
-
-select * from (
-  select account_id, bank_to, account_to, sum(amount) as Total
-  from bank.order
-  group by account_id, bank_to, account_to
-) sub1
-where total > 10000;
+) sub1; 
 
 
 #In this query we will use the results from Sample A. In that query we found the banks from the trans table where the average amount of transactions is over 5500. Now we will use those results to filter the results from the order table where bank_to is in the list of banks found previously.
