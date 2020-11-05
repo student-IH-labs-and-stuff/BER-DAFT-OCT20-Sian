@@ -92,6 +92,7 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |Lab \| SQL Join| [link](https://github.com/ironhack-labs/lab-sql-join) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.01_lab_sql_join_solution.md) |
 |Lab \| SQL SQL Joins on multiple tables| [link](https://github.com/ironhack-labs/lab-sql-join-multiple-tables) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.02_lab_sql_join_multiple_tables_solution.md) |
 |Lab \| SQL SQL subqueries| [link](https://github.com/ironhack-labs/lab-sql-subqueries) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.05_lab_sql_subqueries_solution.md) |
+|Lab \| SQL SQL Advanced Queries| [link](https://github.com/ironhack-labs/lab-sql-advanced-queries) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.06_lab_sql_advanced_queries_solution.md) |
 
 
 

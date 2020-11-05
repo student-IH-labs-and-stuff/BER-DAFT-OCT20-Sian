@@ -1,0 +1,46 @@
+
+4. What is pandas?
+Software library… Data manipulation tool - for working with tabular data - spreadsheets, ODBC, databases - developed by a guy called Wes Mckinney, uses the Numpy package - key data structure of pandas is data frame. 
+
+Follow up qu — What is numpy?? 
+Its a python library - effectively a toolset which is going to allow us to work with data much faster than lists. Like math that we used earlier 
+
+We know we need to use Numpy and Pandas. Lets get numpy into our python scratch pad first
+5. Using numpy 
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+print(arr[3])
+print(arr[3:])
+print(arr[:3])
+We have more advanced type functions eg print(arr.dtype)
+Or - arr = np.array(['apple', 'banana', 'cherry'])
+print(arr.dtype)
+* i - integer
+* b - boolean
+* u - unsigned integer
+* f - float
+* c - complex float
+* m - timedelta
+* M - datetime
+* O - object
+* S - string
+* U - unicode string
+* V - fixed chunk of memory for other type ( void )
+Fixed data type of an array on creation 
+arr = np.array([1, 2, 3, 4], dtype='S')
+print(arr)
+print(arr.dtype)
+And lengths 
+arr = np.array([1, 2, 3, 4], dtype='i4')
+print(arr)
+print(arr.dtype)
+
+6. Why we need to switch to pandas
+With numpy we can work with 2/3/4 dimensional arrays, but is it going to work for our needs in this class? What we really want to be able to do is work with multiple data sources, or tables of data, such as csvs, excel, sql tables - these are examples of 2d arrays - which we will merge together, reshape… ie data wrangling.  
+
+The rule of thumb: use the simplest data structure that still satisfies your needs. If we rank the data structures from most simple to least simple:
+1. Dictionaries and lists
+2. numpy arrays
+3. Panda data frames 
+Lets look at the data wrangling options for panda data frames - open cheat sheet https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
