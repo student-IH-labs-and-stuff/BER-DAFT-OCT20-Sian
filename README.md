@@ -21,6 +21,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 ### Unit 1 (Week 1) <a name="ln_u1"></a>
 
+*TODO: fix broken links*
+
 | Day | Notes | Files |
 |--|--|--|
 |2|[`teaching2010.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202010.ipynb)||
@@ -28,6 +30,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |4|[`teaching2110.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202210.ipynb), [`lambda.ipynb` (python data cleaning utils)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/lambda.ipynb)||
 
 ### Unit 2 (Week 2) <a name="ln_u2"></a>
+
+*TODO: fix broken links*
 
 | Day | Notes | Files |
 |--|--|--|
@@ -38,6 +42,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |5|||
 
 ### Unit 3 (Week 3) <a name="ln_u3"></a>
+
+*TODO: fix broken links*
 
 | Day | Notes | Files |
 |--|--|--|
