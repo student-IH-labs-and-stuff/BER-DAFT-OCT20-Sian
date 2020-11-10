@@ -46,6 +46,16 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |4|||
 |5|||
 
+
+| Day | Notes | Files |
+|--|--|--|
+|1|"Healthcare for all" - Case study, instructions [(`.md`)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/healthcare4all.md), column definitions ([`.docx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/healthcare%20for%20all%20column%20definitions.docx)), [`imputation_methods.pptx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/imputation%20methods.pptx), [`numerical columns distribution.pptx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/numerical%20columns%20distribution.pptx), [`imbalance and mitigation.pptx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/imbalance%20and%20mitigation.pptx)| Healthcare for all, data ([`.csv`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/unit4_healthcare_for_all.csv))|
+|2|||
+|3|||
+|4|||
+|5|||
+
+
 ## 2. Lab solutions
 
 ### Unit 1 (Week 1) <a name="ls_u1"></a>
