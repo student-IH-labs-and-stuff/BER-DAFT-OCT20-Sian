@@ -9,6 +9,7 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
   * [Week 1](#ln_u1)
   * [Week 2](#ln_u2)
   * [Week 3](#ln_u3)
+  * [Week 4](#ln_u4)
 2. [Lab Solutions](#ls)
   * [Week 1](#ls_u1)
     * [Own notebooks](#ls_u1_own)
@@ -46,6 +47,7 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |4|||
 |5|||
 
+### Unit 4 (Week 4) <a name="ln_u4"></a>
 
 | Day | Notes | Files |
 |--|--|--|
