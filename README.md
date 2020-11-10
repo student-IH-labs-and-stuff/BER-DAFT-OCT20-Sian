@@ -9,6 +9,7 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
   * [Week 1](#ln_u1)
   * [Week 2](#ln_u2)
   * [Week 3](#ln_u3)
+  * [Week 4](#ln_u4)
 2. [Lab Solutions](#ls)
   * [Week 1](#ls_u1)
     * [Own notebooks](#ls_u1_own)
@@ -20,6 +21,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 ### Unit 1 (Week 1) <a name="ln_u1"></a>
 
+*TODO: fix broken links*
+
 | Day | Notes | Files |
 |--|--|--|
 |2|[`teaching2010.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202010.ipynb)||
@@ -27,6 +30,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |4|[`teaching2110.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/teaching%202210.ipynb), [`lambda.ipynb` (python data cleaning utils)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/lambda.ipynb)||
 
 ### Unit 2 (Week 2) <a name="ln_u2"></a>
+
+*TODO: fix broken links*
 
 | Day | Notes | Files |
 |--|--|--|
@@ -38,6 +43,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 ### Unit 3 (Week 3) <a name="ln_u3"></a>
 
+*TODO: fix broken links*
+
 | Day | Notes | Files |
 |--|--|--|
 |1|[`unit_3_day_1.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/unit%203%20day%201.ipynb)||
@@ -45,6 +52,17 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |3|||
 |4|||
 |5|||
+
+### Unit 4 (Week 4) <a name="ln_u4"></a>
+
+| Day | Notes | Files |
+|--|--|--|
+|1|"Healthcare for all" - Case study, instructions [(`.md`)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/healthcare4all.md), column definitions ([`.docx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/healthcare%20for%20all%20column%20definitions.docx)), [`imputation_methods.pptx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/imputation%20methods.pptx), [`numerical columns distribution.pptx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/numerical%20columns%20distribution.pptx), [`imbalance and mitigation.pptx`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Notes/unit_4/imbalance%20and%20mitigation.pptx)| Healthcare for all, data ([`.csv`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Other/unit4_healthcare_for_all.csv))|
+|2|||
+|3|||
+|4|||
+|5|||
+
 
 ## 2. Lab solutions
 
