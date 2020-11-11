@@ -91,6 +91,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 ### Unit 2 (Week 2) <a name="ls_u2"></a>
 
+[solutions folder](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/tree/main/Solutions/Labs/unit-2)
+
 | Lab | Link to lab instruction (external repo) | Link to lab solution |
 |-----|-------------------------|--------------------------------------|
 | Lab \| SQL Intro | [link](https://github.com/ironhack-labs/lab-intro-sql) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-2/2.01_lab_intro_sql_solution.md) |
@@ -105,6 +107,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 ### Unit 3 (Week 3) <a name="ls_u3"></a>
 
+[solutions folder](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/tree/main/Solutions/Labs/unit-3)
+
 | Lab | Link to lab instruction (external repo) | Link to lab solution |
 |-----|-------------------------|--------------------------------------|
 |Lab \| SQL Join| [link](https://github.com/ironhack-labs/lab-sql-join) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.01_lab_sql_join_solution.md) |
@@ -113,6 +117,15 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 |Lab \| Database normalization| [link](https://github.com/ironhack-labs/lab-database-normalization)| [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.04_lab_database_normalization_solution.md)|
 |Lab \| SQL SQL subqueries| [link](https://github.com/ironhack-labs/lab-sql-subqueries) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.05_lab_sql_subqueries_solution.md) |
 |Lab \| SQL SQL Advanced Queries| [link](https://github.com/ironhack-labs/lab-sql-advanced-queries) | [link](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-3/3.06_lab_sql_advanced_queries_solution.md) |
+
+### Unit 4 (Week 4) <a name="ls_u4"></a>
+
+[solutions folder](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/tree/main/Solutions/Labs/unit-4)
+
+| Lab | Link to lab instruction (external repo) | Link to lab solution |
+|-----|-------------------------|--------------------------------------|
+|`Lab \| Cleaning numerical data`, `Lab \| Cleaning Categorical data`|[Lab cleaning categorical data](https://github.com/ironhack-labs/lab-cleaning-categorical-data), [Lab cleaning numerical data](https://github.com/ironhack-labs/lab-cleaning-numerical-data)|[`4.1_4.2_Labs_Cleaning_numerical_and_categorical_data.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-4/4.1_4.2_Labs_Cleaning_numerical_and_categorical_data.ipynb) (one notebook)|
+
 
 #### Miscellaneous <a name="misc_u2"></a>
 
