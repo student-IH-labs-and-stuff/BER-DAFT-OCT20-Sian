@@ -18,6 +18,6 @@ this is where we will share resources useful for the mid bootcamp project
 * [Explanation](https://datatofish.com/statsmodels-linear-regression/) of the terms in OLS summary (P-Value, std. error, confidence interval, coefficients etc.)
 
 
-## Programming in Python
+## Python tools
 
 * [tqdm progress bars](https://towardsdatascience.com/progress-bars-in-python-4b44e8a4c482) in Jupyter Notebook
