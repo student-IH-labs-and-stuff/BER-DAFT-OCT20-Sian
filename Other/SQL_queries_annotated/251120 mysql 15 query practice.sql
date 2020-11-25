@@ -1,3 +1,5 @@
+
+
 CREATE DATABASE ORG;
 SHOW DATABASES;
 USE ORG;
@@ -38,6 +40,8 @@ INSERT INTO Bonus
 		(003, 4000, '16-02-20'),
 		(001, 4500, '16-02-20'),
 		(002, 3500, '16-06-11');
+		
+		
 CREATE TABLE Title (
 	WORKER_REF_ID INT,
 	WORKER_TITLE CHAR(25),
@@ -63,34 +67,104 @@ INSERT INTO Title
  
  # 1 Write an SQL query to print the FIRST_NAME from Worker table after removing white spaces from the right side.
  
+ select RTRIM(FIRST_NAME) as Name from Worker;
+ 
+ 
  # 2 Write an SQL query to print the DEPARTMENT from Worker table after removing white spaces from the left side.
  
+ select LTRIM(DEPARTMENT) as Dept from Worker;
+ 
+ 
 # 3 Write an SQL query to print the FIRST_NAME and LAST_NAME from Worker table into a single column COMPLETE_NAME. A space char should separate them.
+
+select CONCAT(FIRST_NAME, " ", LAST_NAME) AS Complete_Name  from Worker;
  
  # 4 Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending.
  
+ select * from Worker 
+ Order by First_Name;
+ 
+ 
  # 5 Write an SQL query to print all Worker details from the Worker table order by FIRST_NAME Ascending and DEPARTMENT Descending.
+ 
+ select * from Worker 
+ Order by First_Name ASC, Department DESC
+ 
 
 #  6 Write an SQL query to print details of Workers with DEPARTMENT name as “Admin”.
 
+ select * from Worker 
+ where DEPARTMENT = 'Admin'
+
+
 # 7  Write an SQL query to print details of the Workers whose FIRST_NAME contains ‘a’.
 
-# 8 Write an SQL query to print details of the Workers whose SALARY lies between 100000 and 500000.
+ select * from Worker 
+ where FIRST_NAME LIKE '%a%';
+
+
+
+# 8 Write an SQL query to print details of the Workers whose SALARY lies between 100,000 and 500,000.
+
+select * from Worker 
+ where SALARY BETWEEN 100000 AND 500000; 
 
 # 9  Write an SQL query to print details of the Workers who have joined in Feb 2014.
 
+select * from Worker 
+ where JOINING_DATE like '2014-02%'; 
+ 
+ 
+select * from Worker 
+ where year(JOINING_DATE) = 2014 AND month(JOINING_DATE) = 2;
+ 
+ 
+ 
 # 10 Write an SQL query to fetch the count of employees working in the department ‘Admin’.
+
+select COUNT(*) from Worker 
+where DEPARTMENT = 'Admin';
 
 #  11 Write an SQL query to print details of the Workers who are also Managers.
 
+SELECT *
+from WORKER w
+JOIN TITLE t
+on w.WORKER_ID = t.WORKER_REF_ID
+WHERE WORKER_TITLE = 'Manager' ;
+
 # 12 Write an SQL query to show the current date and time.
+
+select NOW();
 
 
 # 13 Write an SQL query to show the top n (say 3) records of worker table by salary.
 
+select * FROM Worker 
+ORDER BY Salary DESC
+LIMIT 3 ;
+
+
 # 14 Write an SQL query to determine the 3rd highest salary from the table.
 
+select * from (select * from Worker order by salary DESC limit 3) 
+as t order by salary ASC limit 1;
+
+#alternative 
+
+select * from Worker 
+Order by Salary DESC
+LIMIT 2,1 ;
+
+
 # 15 Write an SQL query to fetch the list of employees with the same salary.
+
+
+select W.Worker_id, W.First_name, W.Salary 
+from Worker W 
+Join Worker W2
+ON W.Salary = W2.Salary 
+AND W.Worker_ID != W2.Worker_ID ; 
 
 
 
