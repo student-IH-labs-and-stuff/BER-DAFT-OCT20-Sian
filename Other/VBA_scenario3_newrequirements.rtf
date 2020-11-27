@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red18\green31\blue60;\red241\green242\blue245;\red172\green117\blue53;
+\red17\green137\blue135;\red147\green5\blue19;\red220\green199\blue200;}
+{\*\expandedcolortbl;;\cssrgb\c9020\c16863\c30196;\cssrgb\c95686\c96078\c96863;\cssrgb\c73333\c53333\c26667;
+\cssrgb\c0\c60000\c60000;\cssrgb\c65098\c9020\c9020;\cssrgb\c89020\c82353\c82353;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Public Sub macro_report_update()\
+\
+Range(\cf4 \strokec4 "B:AF, AH:AJ, AL:AO, AQ:AR"\cf2 \strokec2 ).Select\
+Selection.Delete\
+\
+Range(\cf4 \strokec4 "1:1"\cf2 \strokec2 ).Delete\
+Range(\cf4 \strokec4 "B:B"\cf2 \strokec2 ).Insert\
+ActiveSheet.Cells.EntireColumn.AutoFit\
+\
+Range(\cf4 \strokec4 "A:A"\cf2 \strokec2 ).Select\
+Selection.NumberFormat 
+\f1\b =
+\f0\b0  \cf4 \strokec4 "@"\cf2 \strokec2 \
+Range(\cf4 \strokec4 "D:D"\cf2 \strokec2 ).Select\
+Selection.NumberFormat 
+\f1\b =
+\f0\b0  \cf4 \strokec4 "@"\cf2 \strokec2 \
+Range(\cf4 \strokec4 "A1"\cf2 \strokec2 ).Select\
+Do\
+\
+Selection.Value 
+\f1\b =
+\f0\b0  WorksheetFunction.Substitute(Selection, \cf4 \strokec4 "-"\cf2 \strokec2 , \cf4 \strokec4 ""\cf2 \strokec2 )\
+\
+Selection.Offset(\cf5 \strokec5 0\cf2 \strokec2 , \cf5 \strokec5 1\cf2 \strokec2 ).Select\
+\
+Selection.Value 
+\f1\b =
+\f0\b0  \cf4 \strokec4 "EE_DDUCT"\cf2 \strokec2 \
+\
+Selection.Offset(\cf5 \strokec5 0\cf2 \strokec2 , \cf5 \strokec5 1\cf2 \strokec2 ).Select\
+\
+Dim x As String\
+\
+x 
+\f1\b =
+\f0\b0  Left(Selection, \cf5 \strokec5 3\cf2 \strokec2 )\
+\
+Selection.Value 
+\f1\b =
+\f0\b0  x\
+\
+Selection.Offset(\cf5 \strokec5 0\cf2 \strokec2 , \cf5 \strokec5 1\cf2 \strokec2 ).Select\
+\
+Dim y As String\
+\
+y 
+\f1\b =
+\f0\b0  Selection.Value 
+\f1\b &
+\f0\b0  \cf4 \strokec4 "||||||||"\cf2 \strokec2 \
+Selection.Value 
+\f1\b =
+\f0\b0  y\
+\
+Selection.Offset(\cf5 \strokec5 0\cf2 \strokec2 , \cf5 \strokec5 1\cf2 \strokec2 ).Select\
+Dim rownumber As Integer\
+rownumber 
+\f1\b =
+\f0\b0  Selection.Row\
+Dim dat As String\
+dat 
+\f1\b =
+\f0\b0  \cf4 \strokec4 "E"\cf2 \strokec2  
+\f1\b &
+\f0\b0  rownumber\
+\
+Dim var1 As String\
+var1 
+\f1\b =
+\f0\b0  WorksheetFunction.EDate(Range(dat), 
+\f1\b -
+\f0\b0 \cf5 \strokec5 1\cf2 \strokec2 )\
+Selection.Offset(\cf5 \strokec5 0\cf2 \strokec2 , \cf5 \strokec5 1\cf2 \strokec2 ).Select\
+Selection.Value 
+\f1\b =
+\f0\b0  var1\
+Selection.NumberFormat 
+\f1\b =
+\f0\b0  \cf4 \strokec4 "m/d/yyyy"\cf2 \strokec2 \
+\
+Dim var2 As String\
+var2 
+\f1\b =
+\f0\b0  Selection.Value\
+Selection.Delete\
+Selection.Offset(\cf5 \strokec5 0\cf2 \strokec2 , 
+\f1\b -
+\f0\b0 \cf5 \strokec5 1\cf2 \strokec2 ).Select\
+\
+Dim z As String\
+z 
+\f1\b =
+\f0\b0  \cf4 \strokec4 "||||||"\cf2 \strokec2  
+\f1\b &
+\f0\b0  var2\
+Selection.Value 
+\f1\b =
+\f0\b0  z\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb7 \strokec6 '\cf2 \cb3 \strokec2  We have to repeat this operation as we cannot have two concatenations together (ie multiple 
+\f1\b &
+\f0\b0  
+\f1\b in
+\f0\b0  the same line)\
+\
+z 
+\f1\b =
+\f0\b0  Selection.Value 
+\f1\b &
+\f0\b0  \cf4 \strokec4 "|||"\cf2 \strokec2 \
+Selection.Value 
+\f1\b =
+\f0\b0  z\
+\
+\
+Selection.Offset(\cf5 \strokec5 1\cf2 \strokec2 , 
+\f1\b -
+\f0\b0 \cf5 \strokec5 4\cf2 \strokec2 ).Select\
+\
+Loop While IsEmpty(Selection) 
+\f1\b =
+\f0\b0  False\
+\
+End Sub\
+}
