@@ -1,5 +1,5 @@
 
-Two examples each for both the Linear Regression & the Classifying Midterm project, from students of another cohort. Of course these are not the one solutions that exist but in the eyes of the teaching team definitely two approaches that you can use as a guidance
+note from Flo : Two examples each for both the Linear Regression & the Classifying Midterm project, from students of another cohort. Of course these are not the one solutions that exist but in the eyes of the teaching team definitely two approaches that you can use as a guidance
 
 credit_card- Classification 
 
