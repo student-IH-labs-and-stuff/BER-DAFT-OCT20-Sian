@@ -147,5 +147,5 @@ Setup instructions & help to get an SQL environment ready
 
 ### webscraping <a name="webscraping"></a>
 
-* [webscraping_workshop (scripted)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/webscraping/webscraping%20workshop.ipynb)
-* [webscraping workshop (livecoded)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/webscraping/webscraping_workshop_livecoded.ipynb)
+* [webscraping_workshop notebook (scripted)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/webscraping/webscraping%20workshop.ipynb)
+* [webscraping workshop notebook (livecoded)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/webscraping/webscraping_workshop_livecoded.ipynb)
