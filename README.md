@@ -1,7 +1,7 @@
 # BER-DAFT-OCT20
 
 
-This repo contains lecture material, lab solutions and more for the **Oct. 2020 Data Analytics course** at Ironhack Berlin (LT: Sian)
+This repo contains lecture material, lab solutions and more for the **Oct. 2020 Data Analytics course** at Ironhack Berlin (LT: Sian).
 
 ## Table of Contents
 
@@ -16,6 +16,9 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
   * [Week 2](#ls_u2)
     * [Misc (SQL installation & error fixes)](#misc_u)
   * [Week 3](#ls_u3)
+3. [Workshop Material](#ws)
+  * [map-filter-reduce](#mfr)
+  * [webscraping](#webscraping)
 
 ## 1. Lecture Notes <a name="ln"></a>
 
@@ -124,7 +127,8 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 
 | Lab | Link to lab instruction (external repo) | Link to lab solution |
 |-----|-------------------------|--------------------------------------|
-|`Lab \| Cleaning numerical data`, `Lab \| Cleaning Categorical data`|[Lab cleaning categorical data](https://github.com/ironhack-labs/lab-cleaning-categorical-data), [Lab cleaning numerical data](https://github.com/ironhack-labs/lab-cleaning-numerical-data)|[`4.1_4.2_Labs_Cleaning_numerical_and_categorical_data.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-4/4.1_4.2_Labs_Cleaning_numerical_and_categorical_data.ipynb) (one notebook)|
+|Lab \| Cleaning numerical data,  Lab \| Cleaning Categorical data|[Lab cleaning numerical data](https://github.com/ironhack-labs/lab-cleaning-numerical-data), [Lab cleaning categorical data](https://github.com/ironhack-labs/lab-cleaning-categorical-data)|[`4.1_4.2_Labs_Cleaning_numerical_and_categorical_data.ipynb`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/Solutions/Labs/unit-4/4.1_4.2_Labs_Cleaning_numerical_and_categorical_data.ipynb) (one notebook)|
+||||
 
 
 #### Miscellaneous <a name="misc_u2"></a>
@@ -132,3 +136,16 @@ This repo contains lecture material, lab solutions and more for the **Oct. 2020 
 Setup instructions & help to get an SQL environment ready
 * [Database Setup](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/misc/setup_instructions_for_next_week/database_setup.md), [SQL dumpfile for testing purpose](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/misc/setup_instructions_for_next_week/mysql_dump.sql) to load if you want to check if everything works
 * [MySQL SequelPro Error Fix](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-SEDA/blob/main/misc/setup_instructions_for_next_week/mysql_sequelpro_error_fix.md)
+
+## Workshop material <a name="ws"></a>
+
+### Map-Filter-Reduce <a name="mfr"></a>
+
+* [map-filter-reduce jupyter notebook (scripted)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/map_filter_reduce/map_filter_reduce_workshop.ipynb)
+* [map-filter-reduce jupyter notebook (livecoded](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/map_filter_reduce/map_filter_reduce_workshop_live_coded.ipynb)
+*  [`unit4_healthcare_for_all.csv`](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/map_filter_reduce/unit4_healthcare_for_all.csv)
+
+### webscraping <a name="webscraping"></a>
+
+* [webscraping_workshop (scripted)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/webscraping/webscraping%20workshop.ipynb)
+* [webscraping workshop (livecoded)](https://github.com/student-IH-labs-and-stuff/BER-DAFT-OCT20-Sian/blob/main/workshops/webscraping/webscraping_workshop_livecoded.ipynb)
