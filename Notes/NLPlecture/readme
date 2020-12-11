@@ -1,1 +1,80 @@
 
+LECTURE NOTES 
+
+This was given as an optional lecture to my class on Dec 10 2020 
+
+the aim of the lecture - to give a flavour for whats possible, play with some different datas structures and get to visual results. 
+
+disclaimer - im not an expert, i have cherry picked the techniques and tools that could give students a head start in this area and could be useful for the projects, 
+
+warning - software installations required 
+
+I began with an overview of what is NLP and some of the things it could be used for that we will dive into today (not exhaustive)
+
+summarisation of text 
+sentiment analysis 
+text classification
+named entity recognition 
+
+I did not create slides as there are many on the web- for a good example of such slides: https://www.slideshare.net/HansiThenuwara/natural-language-processing-64271235
+
+I gave an example of a sentence which could cause challenges for treating text as data 
+"will you help me with my will"
+in order to establish the meaning of the words in the sentence we either need to use 
+Rule based approach (Pros: common sense, manual heavy, slow Cons: little training needed, easy to debug, transparent)
+or 
+stats based approach (Pros: scalable, quick to run, learns by itself Cons: takes more training and thinking through, outcomes need to be deduced, black box)
+
+NLP analysis methods rely upon the following approaches (not exhaustive)
+-lexical (words, sentences)
+-syntactic (relationships between words)
+- semantic (meaning of words - and stripping out those words that are meaningless)
+
+
+techniques: 
+tokenisation (breaking sentences up)
+tagging(parts of speech)
+having vocabulary ready to compare to (models, bag of words)
+finding links /urls or numbers in text 
+finding links / similar words in text 
+understanding the context of words to group them 
+pulling out the meanings of words
+identify entities in text
+converting unstructured to structured data to look for trends and comparisons, patterns
+dealing with ambiguity 
+
+tools you might use https://sunscrapers.com/blog/8-best-python-natural-language-processing-nlp-libraries/
+
+tools we will use in lecture : 
+
+NLTK - natural language toolkit - open source
+education and research focus 
+not production product ready (ie you cant build a website on it)
+good for recommenders, sentiment analysis, chat bots
+lots of training and tutorials on the web 
+
+spacy - open source 
+fast to get started with 
+relies on a stats model, has vectorisation
+can be semi customised by inserting additional pipeline stages but is somewhat of a black box 
+involves neural networks and deep learning behind the scenes (so a lot of work has been done for you)
+good for summarisation, analysis of reviews, auto correct, entity recognition 
+
+textblob - open source 
+good for sentiment analysis, spell correct, translation
+has an interface to nltk 
+doesnt include vectorisation 
+
+
+plan - see jupyter notebook to follow along and recording
+
+1- starting with text of a news article do some simple lexical analysis using nltk
+
+2- bring in sentiment ready data (from kaggle) and do a simple textblob sentiment score - explain how it works and how to bring it into the data frame
+
+3 - introduce to spacy, show how it works with sentences to complete semantic and syntactic analysis for you (some of which can be visualised) 
+
+4 - run spacy on trump tweet data to identify named entities (and types) - most named -> as a chart 
+
+
+
