@@ -64,6 +64,8 @@ textblob - open source
 good for sentiment analysis, spell correct, translation
 has an interface to nltk 
 doesnt include vectorisation 
+the logic of sentiment seems hit or miss 
+would need to manually code overriding logic to recognise sentiment of your data set - doesnt learn
 
 
 plan - see jupyter notebook to follow along and recording
